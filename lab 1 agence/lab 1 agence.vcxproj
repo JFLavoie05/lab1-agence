@@ -129,19 +129,23 @@
   <ItemGroup>
     <ClCompile Include="Empire.cpp" />
     <ClCompile Include="Faction.cpp" />
+    <ClCompile Include="FactoryVaisseau.cpp" />
     <ClCompile Include="Guerre.cpp" />
     <ClCompile Include="lab 1 agence.cpp" />
     <ClCompile Include="Livraison.cpp" />
     <ClCompile Include="Rebellion.cpp" />
+    <ClCompile Include="Station.cpp" />
     <ClCompile Include="Transport.cpp" />
     <ClCompile Include="Vaisseau.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Empire.h" />
     <ClInclude Include="Faction.h" />
+    <ClInclude Include="FactoryVaisseau.h" />
     <ClInclude Include="Guerre.h" />
     <ClInclude Include="livraison.h" />
     <ClInclude Include="Rebellion.h" />
+    <ClInclude Include="Station.h" />
     <ClInclude Include="Transport.h" />
     <ClInclude Include="Vaisseau.h" />
   </ItemGroup>

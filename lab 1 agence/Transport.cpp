@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include "Transport.h"
+#include "Faction.h"
 using namespace std;
 
 Transport::~Transport() 
@@ -8,7 +9,13 @@ Transport::~Transport()
 
 }
 
-Transport:: Transport() : Vaisseau(0,250,500,1500)
+Transport::Transport(Faction* _faction)
+{
+	faction = _faction;
+	nom = "Baguette";
+}
+
+Transport:: Transport() : Vaisseau(0,250,500,1500, faction, "Baguette")
 {
 
 }

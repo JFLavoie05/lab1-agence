@@ -6,17 +6,28 @@
 #include "Vaisseau.h"
 #include "Empire.h"
 #include "Rebellion.h"
+#include "FactoryVaisseau.h"
 using namespace std;
 
 int main()
 {
-    guerre* vaisseauGuerre = new guerre();
-    livraison* vaisseauLivraison = new livraison();
+    srand(time(NULL));
+    Guerre* vaisseauGuerre = new Guerre();
+    Livraison* vaisseauLivraison = new Livraison();
     Transport* vaisseauTransport = new Transport();
 
     cout << vaisseauGuerre->to_string() << endl;
     cout << vaisseauLivraison->to_string() << endl;
     cout << vaisseauTransport->to_string() << endl;
+
+
+    cout << "\n... production d'un vaisseau\n" << endl;
+    Vaisseau* monVaisseau = FactoryVaisseau::getRandomVaisseau();
+     
+    cout << monVaisseau->to_string();
+    
+
+    delete monVaisseau;
 }
 
 

@@ -1,11 +1,13 @@
 #pragma once
+#include <string>
 #include "Vaisseau.h"
-class guerre :
+class Guerre :
 
 	public Vaisseau
 {
 public:
-	guerre();
-	~guerre();
+	Guerre();
+	Guerre(Faction* faction);
+	~Guerre();
 	string to_string();
 };

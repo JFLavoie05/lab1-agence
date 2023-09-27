@@ -1,19 +1,26 @@
 #include <string>
 #include <iostream>
 #include "Guerre.h"
+#include "Faction.h"
 using namespace std;
 
-guerre::~guerre() 
+Guerre::~Guerre() 
 {
 
 }
 
-guerre::guerre() : Vaisseau(50, 50, 10, 250)
+Guerre::Guerre(Faction* _faction)
 {
-
+	faction = _faction;
+	nom = "Baguette";
 }
 
-string guerre::to_string()
+Guerre::Guerre() : Vaisseau(50, 50, 10, 250, faction, "Baguette")
+{
+	nom = "Baguette";
+}
+
+string Guerre::to_string()
 {
 	string info = Vaisseau::to_string();
 	info.append("Je suis pour la guerre");

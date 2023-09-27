@@ -9,7 +9,7 @@ class Transport :
 {
 
 public:
-
+	Transport(Faction* faction);
 	Transport();
 	~Transport();
 
