@@ -9,7 +9,7 @@ Transport::~Transport()
 
 }
 
-Transport::Transport(Faction* _faction)
+Transport::Transport(Faction* _faction) : Vaisseau(0, 250, 500, 1500, faction, "Baguette")
 {
 	faction = _faction;
 	nom = "Baguette";

@@ -21,7 +21,7 @@ Faction::Faction(int _attaque, int _defense, int _vie, int _capacite)
 std::string Faction::getNom()
 {
 	string info;
-	info.append("Le nom de la faction est : " + nom);
+	info.append(nom);
 
 
 	return info;

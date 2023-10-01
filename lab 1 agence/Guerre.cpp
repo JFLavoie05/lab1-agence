@@ -9,7 +9,7 @@ Guerre::~Guerre()
 
 }
 
-Guerre::Guerre(Faction* _faction)
+Guerre::Guerre(Faction* _faction) : Vaisseau(50, 50, 10, 250, faction, "Baguette")
 {
 	faction = _faction;
 	nom = "Baguette";

@@ -10,7 +10,7 @@ Livraison::~Livraison()
 
 }
 
-Livraison::Livraison(Faction* _faction)
+Livraison::Livraison(Faction* _faction) : Vaisseau(10, 250, 100, 1000, faction, "Baguette")
 {
 	faction = _faction;
 	nom = "Baguette";
